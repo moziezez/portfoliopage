@@ -2,7 +2,7 @@ const i18n = {
   en: {
     'nav-projects': 'Projects', 'nav-skills': 'Skills', 'nav-about': 'About', 'nav-contact': 'Contact',
     'hero-badge': 'Available for projects',
-    'tag1': 'Web Dev', 'tag2': 'UI Designer', 'tag3': 'Future Builder',
+    'tag1': 'Web Dev', 'tag2': 'UI Designer', 'tag3': 'Fullstack Builder',
     'hero-cta': 'View My Work →',
     'scroll': 'Scroll',
     'label-projects': 'Selected Work', 'title-projects': 'What I\'ve built',
