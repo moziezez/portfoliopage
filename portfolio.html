@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mo Rizzla — Web Dev & UI Designer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Mono:ital,wght@0,300;0,400;1,300&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/styles.css">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a class="nav-logo" href="#hero">R<span>A</span></a>
+    <ul class="nav-links">
+      <li><a href="#projects" data-i18n="nav-projects">Projects</a></li>
+      <li><a href="#skills" data-i18n="nav-skills">Skills</a></li>
+      <li><a href="#about" data-i18n="nav-about">About</a></li>
+      <li><a href="#contact" data-i18n="nav-contact">Contact</a></li>
+    </ul>
+    <div class="nav-controls">
+      <button class="toggle-btn" id="langToggle" aria-label="Toggle language">EN</button>
+      <button class="toggle-btn" id="themeToggle" aria-label="Toggle theme">☽</button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-stars"></div>
+    <div class="hero-grid"></div>
+    <div class="hero-content">
+      <div class="hero-badge" data-i18n="hero-badge">Available for projects</div>
+      <h1 class="hero-name">Rizzla <span>Apps</span></h1>
+      <p class="hero-tagline">
+        <span data-i18n="tag1">Web Dev</span><span class="dot">·</span><span data-i18n="tag2">UI Designer</span><span class="dot">·</span><span data-i18n="tag3">Future Builder</span>
+      </p>
+      <a href="#projects" class="hero-cta" data-i18n="hero-cta">View My Work →</a>
+    </div>
+    <div class="scroll-indicator">
+      <span data-i18n="scroll">Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <p class="section-label reveal" data-i18n="label-projects">Selected Work</p>
+    <h2 class="section-title reveal" data-i18n="title-projects">What I've <em>built</em></h2>
+    <div class="projects-grid">
+
+      <!-- Horoscope App -->
+      <article class="project-card cosmos reveal">
+        <div class="project-status status-live">
+          <div class="status-dot"></div>
+          <span data-i18n="status-live">Live</span>
+        </div>
+        <p class="project-num">01</p>
+        <h3 class="project-name" data-i18n="p1-name">Horoscope WebApp</h3>
+        <p class="project-desc" data-i18n="p1-desc">A dynamic astrology web application running on a Node.js server, seamlessly integrated via WordPress plugin — blending cosmic data with custom UI design.</p>
+        <div class="project-tags">
+          <span class="tag">Node.js</span>
+          <span class="tag">HTML/CSS</span>
+          <span class="tag">WordPress Plugin</span>
+          <span class="tag">API Integration</span>
+          <span class="tag">UI Design</span>
+        </div>
+        <a href="https://www.vedaversum.de/astrologie/horoskop" target="_blank" class="project-link">
+          <span data-i18n="view-project">View Project</span>
+          <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M2 10L10 2M10 2H4M10 2v6" />
+          </svg>
+        </a>
+      </article>
+
+      <!-- Restaurant -->
+      <article class="project-card nano reveal" data-delay="1">
+        <div class="project-status status-live">
+          <div class="status-dot"></div>
+          <span data-i18n="status-live">Live</span>
+        </div>
+        <p class="project-num">02</p>
+        <h3 class="project-name" data-i18n="p2-name">Restaurant Website</h3>
+        <p class="project-desc" data-i18n="p2-desc">A fully custom restaurant web presence — designed and built from scratch with focus on appetite-evoking visuals, smooth navigation and clean mobile experience.</p>
+        <div class="project-tags">
+          <span class="tag">HTML/CSS</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">Responsive Design</span>
+          <span class="tag">UX/UI</span>
+        </div>
+        <a href="https://fehmis.de" target="_blank" class="project-link">
+          <span data-i18n="view-project">View Project</span>
+          <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M2 10L10 2M10 2H4M10 2v6" />
+          </svg>
+        </a>
+      </article>
+
+      <!-- Yoga -->
+      <article class="project-card organic reveal" data-delay="2">
+        <div class="project-status status-progress">
+          <div class="status-dot"></div>
+          <span data-i18n="status-wip">In Progress</span>
+        </div>
+        <p class="project-num">03</p>
+        <h3 class="project-name" data-i18n="p3-name">Popup Yoga Site</h3>
+        <p class="project-desc" data-i18n="p3-desc">A minimalist landing page for Popup Yoga — designed to help instructors plan and promote spontaneous yoga sessions with easy scheduling and booking.</p>
+        <div class="project-tags">
+          <span class="tag">HTML/CSS</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">UI/UX</span>
+          <span class="tag">Booking Flow</span>
+        </div>
+        <a href="#" class="project-link" style="opacity:0.4; pointer-events:none;">
+          <span data-i18n="coming-soon">Coming Soon</span>
+          <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M2 10L10 2M10 2H4M10 2v6" />
+          </svg>
+        </a>
+      </article>
+
+      <!-- YTT -->
+      <article class="project-card organic reveal" data-delay="2">
+        <div class="project-status status-progress">
+          <div class="status-dot"></div>
+          <span data-i18n="status-wip">In Progress</span>
+        </div>
+        <p class="project-num">04</p>
+        <h3 class="project-name" data-i18n="p4-name">Yoga Teacher Training</h3>
+        <p class="project-desc" data-i18n="p4-desc">An elegant promotion page for yoga teacher training programs — currently in development, featuring soft aesthetics, course info, and booking flow.</p>
+        <div class="project-tags">
+          <span class="tag">HTML/CSS</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">UI/UX</span>
+          <span class="tag">Mailing Lists</span>
+          <span class="tag">WhatsApp Groups</span>
+        </div>
+        <a href="#" class="project-link" style="opacity:0.4; pointer-events:none;">
+          <span data-i18n="coming-soon">Coming Soon</span>
+          <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M2 10L10 2M10 2H4M10 2v6" />
+          </svg>
+        </a>
+      </article>
+
+      <!-- CoCreatorProfiles -->
+      <article class="project-card organic reveal" data-delay="2">
+        <div class="project-status status-progress">
+          <div class="status-dot"></div>
+          <span data-i18n="status-wip">In Progress</span>
+        </div>
+        <p class="project-num">05</p>
+        <h3 class="project-name" data-i18n="p5-name">CoCreatorProfiles</h3>
+        <p class="project-desc" data-i18n="p5-desc">A platform for showcasing creative professionals and their portfolios — currently in development, featuring a modern design, user profiles, and project showcases.</p>
+        <div class="project-tags">
+          <span class="tag">Next.js</span>
+          <span class="tag">React</span>
+          <span class="tag">Databases</span>
+          <span class="tag">UI/UX</span>
+        </div>
+        <a href="#" class="project-link" style="opacity:0.4; pointer-events:none;">
+          <span data-i18n="coming-soon">Coming Soon</span>
+          <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M2 10L10 2M10 2H4M10 2v6" />
+          </svg>
+        </a>
+      </article>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <p class="section-label reveal" data-i18n="label-skills">Capabilities</p>
+    <h2 class="section-title reveal" data-i18n="title-skills">Tools &amp; <em>Craft</em></h2>
+    <div class="skills-layout">
+      <div class="reveal">
+        <p class="skill-category-title" data-i18n="cat-dev">Development</p>
+        <div class="skill-pills">
+          <span class="skill-pill">HTML5</span>
+          <span class="skill-pill">CSS3</span>
+          <span class="skill-pill">JavaScript</span>
+          <span class="skill-pill">Node.js</span>
+          <span class="skill-pill">WordPress</span>
+          <span class="skill-pill">Plugin Dev</span>
+          <span class="skill-pill">REST APIs</span>
+          <span class="skill-pill">Git</span>
+          <span class="skill-pill">Responsive Design</span>
+        </div>
+        <p class="skill-category-title" data-i18n="cat-design">Design</p>
+        <div class="skill-pills">
+          <span class="skill-pill">UI/UX Design</span>
+          <span class="skill-pill">Figma</span>
+          <span class="skill-pill">Typography</span>
+          <span class="skill-pill">Visual Design</span>
+          <span class="skill-pill">Layered Textures</span>
+          <span class="skill-pill">Motion Design</span>
+          <span class="skill-pill">Design Systems</span>
+        </div>
+      </div>
+      <div class="reveal" data-delay="1">
+        <p class="skill-category-title" data-i18n="cat-proficiency">Proficiency</p>
+        <div class="skill-bar-group">
+          <div class="skill-bar-row"><span class="skill-bar-label">HTML / CSS</span><span class="skill-bar-pct">95%</span></div>
+          <div class="skill-bar-track">
+            <div class="skill-bar-fill" style="width:95%"></div>
+          </div>
+          <div class="skill-bar-row"><span class="skill-bar-label">JavaScript</span><span class="skill-bar-pct">80%</span></div>
+          <div class="skill-bar-track">
+            <div class="skill-bar-fill" style="width:80%"></div>
+          </div>
+          <div class="skill-bar-row"><span class="skill-bar-label">Node.js</span><span class="skill-bar-pct">85%</span></div>
+          <div class="skill-bar-track">
+            <div class="skill-bar-fill" style="width:85%"></div>
+          </div>
+          <div class="skill-bar-row"><span class="skill-bar-label">UI/UX Design</span><span class="skill-bar-pct">75%</span></div>
+          <div class="skill-bar-track">
+            <div class="skill-bar-fill" style="width:75%"></div>
+          </div>
+          <div class="skill-bar-row"><span class="skill-bar-label">WordPress</span><span class="skill-bar-pct">65%</span></div>
+          <div class="skill-bar-track">
+            <div class="skill-bar-fill" style="width:65%"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <p class="section-label reveal" data-i18n="label-about">Who I Am</p>
+    <h2 class="section-title reveal" data-i18n="title-about">The Mind <em>behind it</em></h2>
+    <div class="about-layout">
+      <div class="about-avatar-wrap reveal">
+        <div class="about-avatar">
+          <img src="images/mo_kugel.png" alt="Mo Viveka" class="about-avatar-img">
+        </div>
+        <div class="about-orbit"></div>
+      </div>
+      <div class="about-text reveal" data-delay="1">
+        <div class="avatar-initials">MV</div>
+        <p data-i18n="about-p1"><strong>Mo Viveka</strong> — web developer and UI designer operating at the intersection of technology and human experience.</p>
+        <p data-i18n="about-p2">I don't just build websites — I architect <strong>digital spaces</strong> that feel intentional, alive, and future-ready. Every project is a chance to push the boundaries of what a browser can express.</p>
+        <p data-i18n="about-p3">My approach blends <strong>clean engineering</strong> with a strong visual language — layered textures, typographic precision, and interaction details that make users stop and notice.</p>
+        <p data-i18n="about-p4">Whether you need a high-performance web app, a product landing page, or a custom WordPress integration — I build it with care, curiosity, and a futurist's eye.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="contact-inner reveal">
+      <p class="section-label" data-i18n="label-contact">Get In Touch</p>
+      <h2 class="section-title" data-i18n="title-contact">Let's build something <em>great</em></h2>
+      <p class="contact-intro" data-i18n="contact-intro">Have a project in mind? I'd love to hear about it. Reach out and let's explore what we can create together.</p>
+      <div class="contact-links">
+        <a href="mailto:hello@moviveka.com" class="contact-link primary">
+          <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5">
+            <rect x="1" y="3" width="12" height="9" rx="1" />
+            <path d="M1 4l6 4.5L13 4" />
+          </svg>
+          <span data-i18n="contact-email">Send an Email</span>
+        </a>
+        <a href="#" class="contact-link">
+          <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M7 1a6 6 0 100 12A6 6 0 007 1zM1 7h12M7 1a9.3 9.3 0 010 12M7 1a9.3 9.3 0 000 12" />
+          </svg>
+          <span data-i18n="contact-portfolio">Portfolio</span>
+        </a>
+        <a href="#" class="contact-link">
+          <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M1 1h5l2 3-2.5 1.5a7 7 0 004 4L11 7l3 2v5a1 1 0 01-1 1C5.6 15 -1 8.4-1 1A1 1 0 010 0z" transform="scale(0.85) translate(1,1)" />
+          </svg>
+          LinkedIn
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <span>© 2026 Mo Viveka</span>
+    <span style="margin: 0 1rem; opacity:0.3;">·</span>
+    <span data-i18n="footer-craft">Crafted with intention</span>
+  </footer>
+  <script src="assets/main.js"></script>
+</body>
+
+</html>
